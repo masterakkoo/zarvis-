@@ -1,0 +1,173 @@
+body {
+    /* background: #eee; */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-wrapper {
+    height: 100%;
+}
+
+.swiper {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper,
+swiper-container {
+    z-index: 0;
+}
+
+.swiper-slide img {
+    display: block;
+
+    object-fit: cover;
+    height: 500px;
+}
+
+.back1 {
+    height: 500px;
+    width: 100%;
+    display: flex;
+
+}
+
+.back11 {
+    height: 100%;
+    width: 50%;
+    background: url("https://cdn.dxomark.com/wp-content/uploads/medias/post-139011/Samsung-Galaxy-S23-Ultra_Yoast-image-packshot-review.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.back12 {
+    height: 100%;
+    width: 50%;
+    background: url("../images/discount.png");
+    border: 2px solid white;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.back2 {
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+
+.back21 {
+    height: 100%;
+    width: 50%;
+    background: url("https://images.samsung.com/is/image/samsung/assets/in/2208/pcd/audio-sound/Galaxy_Buds2Pro_KV.jpg?$720_520_JPG$");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back22 {
+    height: 100%;
+    width: 50%;
+    background: url("https://images.samsung.com/is/image/samsung/assets/in/2208/pcd/audio-sound/Galaxy_Buds2Pro_Lifestyle.jpg?$720_520_JPG$");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.back3 {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back32 {
+    height: 100%;
+    width: 50%;
+    background: url("https://m.media-amazon.com/images/S/aplus-media-library-service-media/a4c38013-36c5-4616-9df1-496b8f090f36.__CR0,0,1464,600_PT0_SX1464_V1___.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.back31 {
+    height: 100%;
+    width: 50%;
+    background: url("https://images.samsung.com/is/image/samsung/p6pim/in/2208/gallery/in-galaxy-watch5-pro-sm-r920nzkainu-533190299?$2052_1641_PNG$");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .back1 {
+        height: 300px;
+    }
+
+    .back11 {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .back12 {
+        display: none;
+    }
+
+    .back2 {
+        height: 300px;
+
+    }
+
+    .back21 {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .back22 {
+        display: none;
+    }
+
+    .back3 {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .back31 {
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+    }
+
+    .back32 {
+        display: none;
+    }
+
+    .swiper-slide img {
+        height: auto;
+    }
+}

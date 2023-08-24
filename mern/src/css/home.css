@@ -1,0 +1,110 @@
+.home-1 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 10px;
+    /* height: 80vh; */
+}
+
+.left-view {
+  
+    position: sticky;
+    left: 0px;
+    top: 100px;
+    z-index: 0px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    height: auto;
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 80vh;
+    box-shadow: 3px 4px 8px 4px #e8cece;
+}
+
+.left-view button {
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+    border-radius: 8px;
+}
+
+.left-view h3 {
+    font-size: 2rem;
+}
+
+.right-view {
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+}
+
+
+
+.dev1 {
+    padding: 5px;
+    /* border: 2px solid black; */
+    display: flex;
+    list-style-type: none;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.dev1 li {
+    margin-left: 10px;
+}
+
+.dev2 {
+    padding: 5px;
+    /* border: 2px solid black; */
+}
+
+.dev2 li {
+    list-style-type: none;
+}
+
+.trending,
+.bestseller,
+.old {
+    height: auto;
+}
+
+@media (max-width:700px) {
+    .home-1 {
+        display: block;
+    }
+
+    .left-view {
+        display: none;
+    }
+
+    .right-view {
+        width: 100%;
+    }
+}
+
+
+
+.form-outline {
+    background-color: #efe9ef;
+    border-radius: 5px;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+    top: 13px;
+}

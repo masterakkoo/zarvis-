@@ -1,0 +1,16 @@
+.add-cont {
+    width: 100%;
+    height: auto;
+}
+
+.row-cont {
+    width: 100%;
+    padding: 2%;
+    box-shadow: 2px 2px 5px 1px #ae9898;
+}
+
+.card2 {
+    border: 2px solid white;
+    box-shadow: none;
+}
+

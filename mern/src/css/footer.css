@@ -1,0 +1,19 @@
+.mid {
+    color: white;
+}
+
+.link p {
+    color: white;
+}
+
+.link a {
+    padding: 1px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.link a:hover {
+    background-color: white;
+    color: black;
+}

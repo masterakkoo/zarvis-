@@ -1,0 +1,19 @@
+.head-cat {
+    margin-top: 10px;
+}
+
+@media (max-width:700px) {
+    .head-cat {
+
+        font-size: 1.2rem;
+    }
+}
+
+.search-item{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+
+}

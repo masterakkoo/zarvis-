@@ -1,0 +1,43 @@
+.o-card{
+
+    height: 300px;
+    width: 60%;
+    margin: auto;
+    /* border: 2px solid black; */
+}
+.o-up{
+    padding: 1%;
+    height: 82%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(188, 175, 175);
+}
+.o-up img{
+    height: 100%;
+    width: 40%;
+    object-fit: contain;
+}
+.o-down{
+    border: 2px solid rgb(174, 157, 157);
+    padding: 0% 2%;
+    height: 12%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.o-down .review:hover{
+    cursor: pointer;
+}
+.o-details p{
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1000px) {
+    .o-card{
+        height: 150px;
+        width: 100%;
+    }
+    .o-details p{font-size: .8rem;}
+    .o-down p{font-size: .7rem}
+}
