@@ -52,7 +52,8 @@ swiper-container {
     height: 100%;
     width: 50%;
     background: url("https://cdn.dxomark.com/wp-content/uploads/medias/post-139011/Samsung-Galaxy-S23-Ultra_Yoast-image-packshot-review.jpg");
-    background-size: contain;
+    background-size:contain;
+    /* object-fit: cover; */
     background-repeat: no-repeat;
 }
 
@@ -115,7 +116,7 @@ swiper-container {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
     .swiper-slide img {
         width: 100%;
     }

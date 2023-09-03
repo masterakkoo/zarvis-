@@ -21,6 +21,7 @@ function Card(p) {
                 },
                 body: JSON.stringify({
                     email: localStorage.getItem("email"), ...p, svarient: p.options[0].varient, sprice: p.options[0].price, model_name: p.name
+                    , id: p.id
 
                 })
             })
@@ -38,7 +39,6 @@ function Card(p) {
 
         navigate(`/product/${p.id}`)
         localStorage.setItem('data1', JSON.stringify(p))
-
 
     }
     var priced;

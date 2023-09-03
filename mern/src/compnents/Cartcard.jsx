@@ -11,9 +11,10 @@ function Cartcard(po) {
     const value = po.index;
     const navigate = useNavigate();
     // console.log(po.index)
+    // console.log(p.id)
     const ppp = async () => {
 
-        navigate("/product")
+        navigate(`/product/${p.id}`)
         localStorage.setItem('data1', JSON.stringify({ ...p, name: p.model_name }))
 
 

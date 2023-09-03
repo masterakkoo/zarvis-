@@ -144,7 +144,7 @@ function App() {
           <Route path="/show-filter/:f1/:f2" element={<ShowFilter />} />
           <Route path="/review/:i1/:i2" element={<Review />} />
         </Routes>
-       
+
       </Cartprovider>
 
 

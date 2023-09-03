@@ -22,7 +22,7 @@ function Usacontextreducer({ children }) {
     const [product, setproduct] = useState([])
     const [add, setadd] = useState({ address: "", state: "", city: "", no: "", ano: "" });
     const [filter, setfilter] = useState([" ", " "]);
-    console.log(product)
+    // console.log(product)
     return (
 
         <product1.Provider value={product}>

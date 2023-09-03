@@ -17,7 +17,7 @@ function AudioProducts(p) {
         setload({ display: "block" })
         snp({ display: "none" })
 
-        const res = await fetch("http://localhost:4000/sort",
+        const res = await fetch("https://react-e-commerce-cm9s.onrender.com/sort",
             {
                 method: "POST",
                 headers: {

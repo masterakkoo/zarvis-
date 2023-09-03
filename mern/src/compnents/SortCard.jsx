@@ -14,7 +14,7 @@ function Sortcard(p) {
     // let setprod = setproduct();
     const Cartadd = async () => {
         if (localStorage.getItem("authToken")) {
-            const res = await fetch("http://localhost:4000/setcart", {
+            const res = await fetch("https://react-e-commerce-cm9s.onrender.com/setcart", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json"

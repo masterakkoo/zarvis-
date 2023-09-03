@@ -42,7 +42,7 @@ function Showaddress() {
 
         const pro_price = 100 * localStorage.getItem("foot");
         const Order = async () => {
-            const res = await fetch("http://localhost:4000/order", {
+            const res = await fetch("https://react-e-commerce-cm9s.onrender.com/order", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json"

@@ -1,22 +1,17 @@
 const express = require("express")
 const router = new express.Router();
 const Item = require("../models/item")
-router.get("/ak1", (req, res) => {
+router.get("/categ", (req, res) => {
     res.send("we")
 })
-
-router.post("/product", async (req, res) => {
-    const _id = req.body._id;
-
+router.post("/category", async (req, res) => {
+    const category = req.body.category;
     try {
-
-        const ans = await Item.find({ _id });
-        console.log(ans);
-        return res.json({ success: true, Res: ans });
+        const ans = await Item.find({ category });
+        return res.json({ "success": true, ans: ans })
     }
     catch (err) {
         res.send("some error occured..")
     }
 })
-
 module.exports = router;

@@ -18,7 +18,7 @@ function ShowFilter() {
   console.log(filter);
   const SHOW = async () => {
 
-    const res = await fetch("http://localhost:4000/quicknav",
+    const res = await fetch("https://react-e-commerce-cm9s.onrender.com/quicknav",
       {
         method: "POST",
         headers: {

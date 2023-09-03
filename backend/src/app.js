@@ -7,6 +7,7 @@ const router1 = require("./routes/newregister")
 const router2 = require("./routes/review")
 const router3 = require("./routes/product")
 const router4 = require("./routes/sort")
+const router5 = require("./routes/category")
 
 
 // console.log(process.env.USER_port)
@@ -14,7 +15,7 @@ const router4 = require("./routes/sort")
 const port = 4000
 
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://zarvis-essential.netlify.app/");
+    res.setHeader("Access-Control-Allow-Origin", "https://zarvis-essential.netlify.app");
     res.header(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept"
@@ -28,6 +29,7 @@ app.use(router1);
 app.use(router2);
 app.use(router3);
 app.use(router4);
+app.use(router5);
 
 
 app.get("/", (req, res) => {

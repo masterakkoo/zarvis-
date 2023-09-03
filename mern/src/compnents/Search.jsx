@@ -15,7 +15,7 @@ function Search() {
     // setabc(search);
     const [a, seta] = useState([]);
     const SHOW = async () => {
-        const res = await fetch("http://localhost:4000/search",
+        const res = await fetch("https://react-e-commerce-cm9s.onrender.com/search",
             {
                 method: "POST",
                 headers: {

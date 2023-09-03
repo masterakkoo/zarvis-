@@ -16,7 +16,7 @@ function Orders() {
   const navigate = useNavigate()
   const [order, setorder] = useState([]);
   const ORDER = async () => {
-    const res = await fetch("http://localhost:4000/getorder",
+    const res = await fetch("https://react-e-commerce-cm9s.onrender.com/getorder",
       {
         method: "POST",
         headers: {

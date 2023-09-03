@@ -174,7 +174,7 @@ function Product(props) {
             </section>
             <div className='pro-fix'>
                 {
-                    (foot === -1) ? <p style={{ color: "white" }}> Select one of the varient</p> : <div className='pro-fix-left' style={{ fontSize: "1.3rem" }}><strike>₹{foot} &nbsp;&nbsp;</strike>&nbsp;&nbsp; {data.discount}% off <span>&nbsp;&nbsp;</span> ₹{((100 - data.discount) / 100) * foot}</div>
+                    (foot === -1) ? <p style={{ color: "white" }}> Select one of the varient</p> : <div className='pro-fix-left' style={{ fontSize: "1.3rem" }}><strike>₹{foot} &nbsp;&nbsp;</strike>&nbsp;&nbsp; {data.discount}% off <span>&nbsp;&nbsp;</span> ₹{(((100 - data.discount) / 100) * foot).toFixed(2)}</div>
 
                 }
 

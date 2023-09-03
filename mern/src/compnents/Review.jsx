@@ -25,7 +25,7 @@ function Review() {
     }
 
     const SUBMIT = async () => {
-        const res = await fetch("http://localhost:4000/getorder/review",
+        const res = await fetch("https://react-e-commerce-cm9s.onrender.com/getorder/review",
             {
                 method: "POST",
                 headers: {

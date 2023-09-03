@@ -13,7 +13,8 @@ const items = new mongoose.Schema({
     }],
     svarient: String,
     sprice: Number,
-    images: [String]
+    images: [String],
+    id: String
 })
 
 const CItem = new mongoose.model("CItem", items);

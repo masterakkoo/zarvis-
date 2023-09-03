@@ -27,7 +27,7 @@ function Contacts() {
         console.log(user)
         const { fname, lname, email, password, con_password } = user;
         if (password === con_password) {
-            const res = await fetch("http://localhost:4000/register1", {
+            const res = await fetch("https://react-e-commerce-cm9s.onrender.com/register1", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json"

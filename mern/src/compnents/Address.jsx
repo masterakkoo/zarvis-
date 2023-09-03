@@ -6,7 +6,7 @@ const i = "https://mdbcdn.b-cdn.net/img/Others/extended-example/delivery.webp";
 function Address() {
     const data = JSON.parse(localStorage.getItem("data1"))
     var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     let pro = product();
     console.log(pro)
@@ -44,7 +44,7 @@ function Address() {
                 },
                 body: JSON.stringify({
                     email: localStorage.getItem("email"), name: data.name, model_id: data.id, model_name: data.name, price: localStorage.getItem("foot"), image: data.images[0],
-                    date:date,time:time
+                    date: date, time: time
                 })
 
             })

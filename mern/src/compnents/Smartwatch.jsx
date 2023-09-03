@@ -2,19 +2,16 @@ import React, { useState, useEffect } from 'react'
 import Card from './Card'
 import Slider from './Slider';
 import Footer from './Footer';
-const options = ['Brand', 'price', 'discount'];
+const options = [ 'Brand', 'price', 'discount'];
 import Dropdown from './Dropdown';
 import Loader from './Loader';
 function Smartwatch(p) {
 
 
     const [mob, setmob] = useState([]);
-
     const [np, snp] = useState({ display: "block" })
     const [load, setload] = useState({ display: "none" })
     const arow = ">";
-
-
 
     const SORT = async (option) => {
         setload({ display: "block" })
@@ -43,7 +40,7 @@ function Smartwatch(p) {
     return (
         <>
             <div style={load}><Loader /></div>
-            <div>
+            <div style={np}>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", margin: "0px 20px" }}>
                     <h1 className='head-cat'> Smart Watches  {arow}</h1>
                     <div style={{ display: "flex", margin: "10px", alignItems: "center" }}>
